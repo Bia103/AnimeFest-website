@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="imag/favicon.ico"/>
+	<title>Istoric</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Fictiv">
+	<meta name="description" content="Harta evenimentului. ">
+	<meta name="keywords" content="Loc, Harta, Adresa">
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/Localizare.css"/>
+</head>
+<body>
+<header>
+<%- include("fragmente/header.ejs");%>
+</header>
+
+		<div class="barameniu">
+		<div class="dr">Animefest</div>
+	 <input type="checkbox" id="chk">
+    <label for="chk" class="arata-meniu">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+		<a href="/">Pagina Principala</a>
+		<a href="/Evenimente">Evenimente</a>
+		<a href="/Istoric">Istoric</a>
+		<a href="/Localizare">Localizare</a>
+		<div class="derulare">
+			<button class="dropbtn">Preturi bilete
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/Preturi">Preturi pentru biletele actorilor</a>
+				<a href="/zile">Preturi pentru biletele de acces</a>
+
+			</div>
+		</div>
+		<div class="derulare">
+			<button class="dropbtn">Altele
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/cosplay">Cosplay</a>
+				<a href="/Anime">Anime-uri</a>
+
+			</div>
+		</div> 
+		<label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+	</div>
+	
+	<div class="centru"><p>AnimeFest se va tine la urmatoarea adresa: Bd. Marasti nr. 65-67, sector 1 <br> Casuta postala 32-3, cod 011465, Bucuresti-Romania</p></div>
+	<div class="centru"><iframe src="https://www.ucv.ro/images/harti/campus.jpg" height="500" width="500"></iframe></div>
+<footer>
+<hr/>
+<p>Data: <time>2019-10-21</time>
+<a href="https://ro.wikipedia.org/wiki/East_European_Comic_Con">Mai multe informatii</a>
+<a href="#">Sus</a>
+</footer>
+</body></html>

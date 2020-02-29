@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="imag/favicon.ico"/>
+	<title>AnimeFest</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Eveniment dedicat pasionatilor de anime-uri. ">
+	<meta name="keywords" content="Anime, Filme, Comics">
+	<meta name="author" content="Fictiv">
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/new1.css"/>
+	<script src="/Js/new1.js"></script>
+</head>
+<body>
+<header>
+	<%- include("fragmente/header.ejs");%>
+	</header>
+	
+	<div class="barameniu">
+		<div class="dr">Animefest</div>
+	 <input type="checkbox" id="chk">
+    <label for="chk" class="arata-meniu">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+		<a href="/">Pagina Principala</a>
+		<a href="/Evenimente">Evenimente</a>
+		<a href="/Istoric">Istoric</a>
+		<a href="/Localizare">Localizare</a>
+		<div class="derulare">
+			<button class="dropbtn">Preturi bilete
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/Preturi">Preturi pentru biletele actorilor</a>
+				<a href="/zile">Preturi pentru biletele de acces</a>
+
+			</div>
+		</div>
+		<div class="derulare">
+			<button class="dropbtn">Altele
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/cosplay">Cosplay</a>
+				<a href="/Anime">Anime-uri</a>
+
+			</div>
+		</div> 
+		<label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+	</div>
+	<div class="continut">
+	<div class="container" >
+	<div class="centru"><img src="https://cdn.pixabay.com/photo/2018/11/04/12/36/moe-3793863_1280.png" width="800" height="680" alt="Anime" title="Anime"></div>
+	<div class="centerat">AnimeFest<br>17-18 noiembrie 2070</div>
+	</div>
+	</div>
+
+        <h1>Inregistrare </h1>
+		<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form class="date" method="post" enctype="application/x-www-form-urlencoded" action="/">
+			<p>
+			<label>
+				Nume si prenume: <input type="text" name="nume" value="X">
+			</label>
+			</p>
+			<p>
+			<label>
+				Zi: <input type="text" name="zi" value="Sambata">
+			</label>
+			</p>
+			<label>
+				Numar de bilete: <input type="text" name="numar" value="100">
+			</label>
+			</p>
+			<p>
+			<label>
+				Password: <input type="password" name="pass" value="">
+			</label>
+			</p>
+			<p>			
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+ 
+<footer>
+<hr/>
+<p>Data: <time>2019-10-21</time>
+<a href="https://ro.wikipedia.org/wiki/East_European_Comic_Con">Mai multe informatii</a>
+<a href="#">Sus</a>
+</footer></body>
+</html>

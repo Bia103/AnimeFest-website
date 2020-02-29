@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="imag/favicon.ico"/>
+	<title>Bilete actori</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Pagina dedicata achizitionarii biletelor pentru actori ">
+	<meta name="keywords" content="Preturi, Actor, Bilete">
+	<meta name="author" content="Fictiv">
+	<link rel="stylesheet" type="text/css" href="Cssprincipal/style.css"/>
+	<link rel="stylesheet" type="text/css" href="Cssprincipal/Preturi.css"/>
+	<script src="/Js/Preturi.js"></script>
+	
+</head>
+<body>
+<header>
+<%- include("fragmente/header.ejs");%>
+</header>
+
+
+		<div class="barameniu">
+		<div class="dr">Animefest</div>
+	 <input type="checkbox" id="chk">
+    <label for="chk" class="arata-meniu">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+		<a href="/">Pagina Principala</a>
+		<a href="/Evenimente">Evenimente</a>
+		<a href="/Istoric">Istoric</a>
+		<a href="/Localizare">Localizare</a>
+		<div class="derulare">
+			<button class="dropbtn">Preturi bilete
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/Preturi">Preturi pentru biletele actorilor</a>
+				<a href="/zile">Preturi pentru biletele de acces</a>
+
+			</div>
+		</div>
+		<div class="derulare">
+			<button class="dropbtn">Altele
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/cosplay">Cosplay</a>
+				<a href="/Anime">Anime-uri</a>
+
+			</div>
+		</div> 
+		<label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+	</div>
+	<table class="cont">
+	<thead>
+	<tr>
+		<th id="Actor">Actor</th>
+		<th>Tipul Biletului</th>
+		<th>Bilete(Pret)</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td rowspan="3" id="Johnny">Johnny Depp</td>
+		<td>Poza</td>
+		<td>100 lei</td>
+	<tr>
+		<td>Autograf</td>
+		<td>70 lei</td>
+	</tr>
+	<tr>
+		<td>Poza + Autograf</td>
+		<td>165 lei</td>
+	</tr>
+
+	<tr>
+		<td rowspan="3">Angelina Jolie</td>
+		<td>Poza</td>
+		<td>120 lei</td>
+	</tr>
+	<tr>
+		<td>Autograf</td>
+		<td>75 lei</td>
+	</tr>
+	<tr>
+		<td>Poza + Autograf</td>
+		<td>170 lei</td>
+	</tr>
+	
+	<tr>
+		<td rowspan="3">Kyubey</td>
+		<td>Poza</td>
+		<td>12000 lei</td>
+	</tr>
+	<tr>
+		<td>Autograf</td>
+		<td>175000 lei</td>
+	</tr>
+	<tr>
+		<td>Poza + Autograf</td>
+		<td>17000000 lei</td>
+	</tr>
+	</tbody>
+</table>
+
+<footer>
+<hr/>
+<p>Data: <time>2019-10-21</time>
+<a href="https://ro.wikipedia.org/wiki/East_European_Comic_Con">Mai multe informatii</a>
+<a href="#">Sus</a>
+</footer>
+</body>

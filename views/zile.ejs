@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="imag/favicon.ico"/>
+	<title>Bilete pe zile</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Fictiv">
+	<meta name="description" content="Preturile biletelor pe zile. ">
+	<meta name="keywords" content="Bilete, Zile, Preturi">
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/Cssprincipal/Preturi.css"/>
+	<script src="/Js/zile.js"></script>
+
+
+
+</head>
+<body>
+<header>
+
+<%- include("fragmente/header.ejs");%>
+</header>
+
+
+		<div class="barameniu">
+		<div class="dr">Animefest</div>
+	 <input type="checkbox" id="chk">
+    <label for="chk" class="arata-meniu">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+		<a href="/">Pagina Principala</a>
+		<a href="/Evenimente">Evenimente</a>
+		<a href="/Istoric">Istoric</a>
+		<a href="/Localizare">Localizare</a>
+		<div class="derulare">
+			<button class="dropbtn">Preturi bilete
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/Preturi">Preturi pentru biletele actorilor</a>
+				<a href="/zile">Preturi pentru biletele de acces</a>
+
+			</div>
+		</div>
+		<div class="derulare">
+			<button class="dropbtn">Altele
+				
+			</button>
+			<div class="derulare-content">
+				<a href="/cosplay">Cosplay</a>
+				<a href="/Anime">Anime-uri</a>
+
+			</div>
+		</div> 
+		<label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+	</div>
+	<table class="cont">
+	<tr>
+		<th>Zi</th>
+		<th>Pret</th>
+	</tr>
+	<tr>
+		<td>Vineri</td>
+		<td>30 lei</td>
+	<tr>
+		<td>Sambata</td>
+		<td>70 lei</td>
+	</tr>
+	<tr>
+		<td>Duminica</td>
+		<td>65 lei</td>
+	</tr>
+</table>
+	<% if(!locals.rsstatus) { %>
+		<p>Completeaza</p>
+	<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+	<div class="form">
+	</div>
+
+</body>
