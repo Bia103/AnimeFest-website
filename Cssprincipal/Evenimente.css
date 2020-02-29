@@ -1,0 +1,25 @@
+.alb{
+	text-align:center;
+	background-color:white;
+	
+	width:100%;
+	border-radius:25%;
+	margin:0%;
+
+	
+}
+.alb li{
+	text-align:justify;
+}
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	color:#AEA4BF;
+}
+p{
+	font-family: 'Neucha', cursive;
+	font-size: 20px;
+}
+ol li:hover a:hover{
+	color:#8F6593;
+	
+}

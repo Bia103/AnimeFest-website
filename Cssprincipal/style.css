@@ -1,0 +1,189 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+.dr{
+	float:right;
+	font-family: 'Arima Madurai', cursive;
+	color:white;
+
+	  
+	    padding: 14px 16px;
+}
+footer{
+	background-color:white;
+}
+header{
+	top:0px;
+	background-color: #E3E4DB;
+	margin: 0;
+	
+}
+h1{
+	font-family: 'Arima Madurai', cursive;
+}
+body {
+	top:0px;
+	width:100%;
+	margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2017/05/23/05/33/flower-2336287_1280.jpg");
+  animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.barameniu {
+  overflow: hidden;
+  background-color: #8E9AAF;
+  
+}
+
+.barameniu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.derulare {
+  float: left;
+  overflow: hidden;
+}
+
+.derulare .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #8E9AAF;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.barameniu a:hover, .derulare:hover .dropbtn {
+  background-color: #CBC0D3;
+}
+
+.derulare-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #EFD3D7;
+  z-index: 1;
+}
+
+.derulare-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.derulare-content a:hover {
+  background-color: #CBC0D3;
+}
+
+.derulare:hover .derulare-content {
+  display: block;
+}
+.redimensionare{
+	width : 300px;
+	height: 300px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: purple;
+  width :800px;
+  height :680px;
+  font-family: 'Kalam', cursive;
+  left:350px;
+  font-size: 50px;
+
+}
+.arata-meniu, .ascundemeniu{
+	transition: 0.4s;
+	display:none;
+}
+#chk{
+	position:absolute;
+	visibility:hidden;
+	z-index:-1111;
+}
+.arata-meniu i{
+	line-height:50px;
+}
+.centerat {
+  position: absolute;
+  top: 460px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centru{
+	 text-align: center;
+	 font-size:30px;
+}
+@media screen and (max-width:800px) {
+  .arata-meniu, .ascundemeniu{
+	  display:block;
+  }
+  .barameniu{
+	  position: fixed;
+	  opacity:0.1;
+	  height:100vh;
+	  left:0;
+	  top:0;
+	  text-align:center;
+	  padding:0;
+  }
+  .barameniu:hover{
+	  opacity:1;
+  }
+  .barameniu a{
+	  display:block;
+	  float:none;
+  }
+   .derulare {
+	  display:block;
+	  float:none;
+	
+  }
+  .derulare .dropbtn {
+	  text-align:center;
+  }
+  .ascundemeniu{
+	  position:absolute;
+	  top:40px;
+	  right:40px;
+  }
+    
+  #chk:checked ~ .barameniu{
+    right: 0;
+  }
+  img{
+	display:none;
+  }
+  body{
+	  width:100%;
+	
+	  
+  }
+   video{
+	display:none;
+  }
+  .container
+  {
+	  display:none;
+  }
+  
+}
